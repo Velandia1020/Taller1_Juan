@@ -11,8 +11,8 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def draw_spiral(t):
-    for y in range(-height // 2, height // 2):
-        for x in range(-width // 2, width // 2):
+    for y in range(-height // 3, height // 3):
+        for x in range(-width // 3, width // 3):
             distance = math.sqrt(x**2 + y**2)
             angle = distance * 0.5 + t
             char = '*' if math.cos(angle) > 0 else ' '
