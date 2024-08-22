@@ -5,7 +5,7 @@ import os
 # Configuración de la espiral
 width, height = 40, 20
 frames = 100
-speed = 0.1
+speed = 0.8 #velocidad
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
